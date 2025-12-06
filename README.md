@@ -10,7 +10,7 @@ Use Python 3.10/11/12 for this assignment.
 
 - **If you already have a conda environment set up (e.g. from the previous homework), you can use it. Just install the necessary libraries with `pip install -r requirements.txt`.**
 
-- If you're on Ubuntu 20.04 or older, you can use deadsnakes (https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa) to install a newer version of Python (3.10 or 3.11). Otherwise install it with `apt` (Ubuntu 22.04 and newer).
+- If you're on Ubuntu 20.04 or older, you can use deadsnakes (<https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa>) to install a newer version of Python (3.10 or 3.11). Otherwise install it with `apt` (Ubuntu 22.04 and newer).
 
 - On macOS, homebrew is recommended for installing Python 3.10/11/12.
 
@@ -37,6 +37,16 @@ You should see something like this:
 
 ![pendulums](.assets/pendulums.png)
 ![walkers](.assets/walkers.png)
+
+### Running on GPUFEL (BACKUP)
+
+Do to the convenience and limited resources of GPUFEL clusters, we strongly encourage you to run this repo locally on your computer (No gpu needed for this task). Take these steps as a backup if other methods fail:
+
+1. connect to VPN - [set up instructions](https://svti.fel.cvut.cz/en/services/vpn.html)
+2. open the gpufel GPUstud Desktop webpage [here](https://gpu.fel.cvut.cz/pun/sys/dashboard/batch_connect/sys/bc_desktop/gpustud/session_contexts/new)
+   - select suitable number of hours
+3. Wait until the GPUStud Desktop session starts (eta 5-7 minutes)
+4.
 
 ### Pendulum environment
 
@@ -66,24 +76,10 @@ Using the methods you implemented in the first part and the already-provided fun
 
 **The objective is to travel as far as possible in the positive x-direction in a limited number of steps (1024 / cca 10 simulation seconds).**
 
-This is evaluated in a tournament with up to 3 additional points awarded as follows:
-
-- **1 point** for traversing least 1 meter in the Walker environment (less than 5 simulation seconds)
-
-- **1 point** if your policy achieves falls within top 50-percentile of the submission distances.
-
-- **1 point** if your policy falls within top 10-percentile of the submission distances.
-
-There are 2 **special bounties** that can be awarded to the best-performing policies:
-
-- **2 points** for beating last year's best submission (86.25 meters)
-
-- **2 points** for traveling further than 110 meters
-
 Make sure you follow the exact specification described in `WalkerPolicy.py` and `walker_training.ipynb` to ensure your policy is evaluated correctly.
 
 ![walker-xddd](.assets/walker.gif)
 
 ### Troubleshooting
 
-If you run into some issues that you or an LLM of your choice can't resolve, please let me know at `korcadav@fel.cvut.cz`. I will ask my LLM :)
+If you run into some issues that you or an LLM of your choice can't resolve, please let me know at `mrkosmic@fel.cvut.cz`. I will ask my LLM :)

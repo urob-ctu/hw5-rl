@@ -38,16 +38,6 @@ You should see something like this:
 ![pendulums](.assets/pendulums.png)
 ![walkers](.assets/walkers.png)
 
-### Running on GPUFEL (BACKUP)
-
-Do to the convenience and limited resources of GPUFEL clusters, we strongly encourage you to run this repo locally on your computer (No gpu needed for this task). Take these steps as a backup if other methods fail:
-
-1. connect to VPN - [set up instructions](https://svti.fel.cvut.cz/en/services/vpn.html)
-2. open the gpufel GPUstud Desktop webpage [here](https://gpu.fel.cvut.cz/pun/sys/dashboard/batch_connect/sys/bc_desktop/gpustud/session_contexts/new)
-   - select suitable number of hours
-3. Wait until the GPUStud Desktop session starts (eta 5-7 minutes)
-4.
-
 ### Pendulum environment
 
 First, in the notebook `task.ipynb` you will go through methods starting with Vanilla Policy Gradient/REINFORCE and ending with PPO, the current state-of-the-art.
